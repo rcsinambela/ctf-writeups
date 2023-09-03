@@ -20,7 +20,7 @@ Lalu saya membuka ketiga file `app.css app.js dan index.html` untuk melihat sour
 
 Selanjutnya saat saya melihat code yang ada di `app.js` itu sangat berantakan dan susah dibaca jadi saya merapihkannya menggunakan https://beautifier.io/
 
-Lalu saat saya source code seperti di bawah ini:
+Lalu saya melihat code seperti di bawah ini:
 
 ![POC 1](/snake/images/poc1.png)
 
