@@ -26,7 +26,7 @@ Lalu saya melihat code seperti di bawah ini:
 
 Saya menemukan sesuatu yang unik yaitu, playerScore = 0x0
 
-Setelah itu saya cari `score` seperti gamber di bawah ini
+Setelah itu saya search `score` dan menemukan sesuatu yang unik seperti gamber di bawah ini
 
 ![POC 2](/snake/images/poc2.png)
 
