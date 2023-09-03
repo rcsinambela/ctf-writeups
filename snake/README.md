@@ -16,7 +16,7 @@ Easy
 
 Pertama saya mencoba menjalankan `index.html` dan melihat seperti sebuah game 
 
-Lalu saya membuka ketiga file `app.css app.js dan index.html` untuk melihat hasilnya
+Lalu saya membuka ketiga file `app.css app.js dan index.html` untuk melihat source codenya
 
 Selanjutnya saat saya melihat code yang ada di `app.js` itu sangat berantakan dan susah dibaca jadi saya merapihkannya menggunakan https://beautifier.io/
 
