@@ -14,7 +14,7 @@ Easy
 
 ## Solution
 
-Pertama saya mencoba menjalankan `index.html` dan melihat seperti sebuah game 
+Pertama saya mencoba menjalankan `index.html` dan melihat ternyata itu game ular-ular
 
 Lalu saya membuka ketiga file `app.css app.js dan index.html` untuk melihat source codenya
 
