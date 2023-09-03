@@ -26,11 +26,11 @@ Lalu saya melihat code seperti di bawah ini:
 
 Saya menemukan sesuatu yang unik yaitu, playerScore = 0x0
 
-Setelah itu saya search `score` dan menemukan sesuatu yang unik seperti gamber di bawah ini
+Setelah itu saya search `score` agar memudahkan dalam pencarian dan menemukan sesuatu yang unik seperti gamber di bawah ini
 
 ![POC 2](/snake/images/poc2.png)
 
-Lalu ubah playerScore = 0x0 dan save
+Lalu saya ubah playerScore = 0x0 dan save
 
 Setelah itu tinggal buka file `index.html` atau reload jika sebelumnya sudah dirun
 
