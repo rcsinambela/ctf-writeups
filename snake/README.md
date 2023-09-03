@@ -1,6 +1,6 @@
 # Snake
 
-Author: abdierryy
+Author: kosong
 
 Category: Reverse Engineering
 
