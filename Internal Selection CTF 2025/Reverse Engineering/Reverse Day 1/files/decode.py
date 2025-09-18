@@ -1,0 +1,16 @@
+# decode.py
+parts = [
+    0x3b283b2c250d1d16,  # movabs rax,...
+    0x3b012d37013b2d2c,  # movabs rdx,...
+    0x2727243f,          # mov DWORD ...
+    0x2727,              # mov WORD ...
+    0x23                 # mov BYTE ...
+]
+
+sizes = [8, 8, 4, 2, 1]    # sizes in bytes (little-endian)
+data = b''.join(parts[i].to_bytes(sizes[i], 'little') for i in range(len(parts)))
+print("cipher (hex):", data.hex())
+key = 0x5e
+decoded = bytes(b ^ key for b in data)
+print("decoded (hex):", decoded.hex())
+print("decoded (ascii):", decoded.decode())

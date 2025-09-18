@@ -1,0 +1,140 @@
+
+chall:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000000011ee <check>:
+    11ee:	endbr64
+    11f2:	push   rbp
+    11f3:	mov    rbp,rsp
+    11f6:	push   r15
+    11f8:	push   r14
+    11fa:	push   r13
+    11fc:	push   r12
+    11fe:	push   rbx
+    11ff:	sub    rsp,0x58
+    1203:	mov    QWORD PTR [rbp-0x78],rdi
+    1207:	mov    rax,QWORD PTR fs:0x28
+    1210:	mov    QWORD PTR [rbp-0x38],rax
+    1214:	xor    eax,eax
+    1216:	mov    rax,rsp
+    1219:	mov    rbx,rax
+    121c:	movabs rax,0x3b283b2c250d1d16
+    1226:	movabs rdx,0x3b012d37013b2d2c
+    1230:	mov    QWORD PTR [rbp-0x50],rax
+    1234:	mov    QWORD PTR [rbp-0x48],rdx
+    1238:	mov    DWORD PTR [rbp-0x40],0x2727243f
+    123f:	mov    WORD PTR [rbp-0x3c],0x2727
+    1245:	mov    BYTE PTR [rbp-0x3a],0x23
+    1249:	mov    BYTE PTR [rbp-0x69],0x5e
+    124d:	call   11c9 <a>
+    1252:	add    eax,0x1
+    1255:	movsxd rdx,eax
+    1258:	sub    rdx,0x1
+    125c:	mov    QWORD PTR [rbp-0x60],rdx
+    1260:	movsxd rdx,eax
+    1263:	mov    r14,rdx
+    1266:	mov    r15d,0x0
+    126c:	movsxd rdx,eax
+    126f:	mov    r12,rdx
+    1272:	mov    r13d,0x0
+    1278:	cdqe
+    127a:	mov    edx,0x10
+    127f:	sub    rdx,0x1
+    1283:	add    rax,rdx
+    1286:	mov    esi,0x10
+    128b:	mov    edx,0x0
+    1290:	div    rsi
+    1293:	imul   rax,rax,0x10
+    1297:	mov    rcx,rax
+    129a:	and    rcx,0xfffffffffffff000
+    12a1:	mov    rdx,rsp
+    12a4:	sub    rdx,rcx
+    12a7:	cmp    rsp,rdx
+    12aa:	je     12be <check+0xd0>
+    12ac:	sub    rsp,0x1000
+    12b3:	or     QWORD PTR [rsp+0xff8],0x0
+    12bc:	jmp    12a7 <check+0xb9>
+    12be:	mov    rdx,rax
+    12c1:	and    edx,0xfff
+    12c7:	sub    rsp,rdx
+    12ca:	mov    rdx,rax
+    12cd:	and    edx,0xfff
+    12d3:	test   rdx,rdx
+    12d6:	je     12e8 <check+0xfa>
+    12d8:	and    eax,0xfff
+    12dd:	sub    rax,0x8
+    12e1:	add    rax,rsp
+    12e4:	or     QWORD PTR [rax],0x0
+    12e8:	mov    rax,rsp
+    12eb:	add    rax,0x0
+    12ef:	mov    QWORD PTR [rbp-0x58],rax
+    12f3:	mov    DWORD PTR [rbp-0x68],0x0
+    12fa:	jmp    131b <check+0x12d>
+    12fc:	mov    eax,DWORD PTR [rbp-0x68]
+    12ff:	cdqe
+    1301:	movzx  eax,BYTE PTR [rbp+rax*1-0x50]
+    1306:	xor    al,BYTE PTR [rbp-0x69]
+    1309:	mov    ecx,eax
+    130b:	mov    rdx,QWORD PTR [rbp-0x58]
+    130f:	mov    eax,DWORD PTR [rbp-0x68]
+    1312:	cdqe
+    1314:	mov    BYTE PTR [rdx+rax*1],cl
+    1317:	add    DWORD PTR [rbp-0x68],0x1
+    131b:	call   11c9 <a>
+    1320:	cmp    DWORD PTR [rbp-0x68],eax
+    1323:	jl     12fc <check+0x10e>
+    1325:	call   11c9 <a>
+    132a:	mov    rdx,QWORD PTR [rbp-0x58]
+    132e:	cdqe
+    1330:	mov    BYTE PTR [rdx+rax*1],0x0
+    1334:	mov    DWORD PTR [rbp-0x64],0x0
+    133b:	jmp    137b <check+0x18d>
+    133d:	mov    eax,DWORD PTR [rbp-0x64]
+    1340:	movsxd rdx,eax
+    1343:	mov    rax,QWORD PTR [rbp-0x78]
+    1347:	add    rax,rdx
+    134a:	movzx  ecx,BYTE PTR [rax]
+    134d:	mov    rdx,QWORD PTR [rbp-0x58]
+    1351:	mov    eax,DWORD PTR [rbp-0x64]
+    1354:	cdqe
+    1356:	movzx  eax,BYTE PTR [rdx+rax*1]
+    135a:	cmp    cl,al
+    135c:	je     1377 <check+0x189>
+    135e:	lea    rax,[rip+0xcbb]        # 2020 <_IO_stdin_used+0x20>
+    1365:	mov    rdi,rax
+    1368:	call   1090 <puts@plt>
+    136d:	mov    edi,0x1
+    1372:	call   10d0 <exit@plt>
+    1377:	add    DWORD PTR [rbp-0x64],0x1
+    137b:	call   11c9 <a>
+    1380:	cmp    DWORD PTR [rbp-0x64],eax
+    1383:	jl     133d <check+0x14f>
+    1385:	lea    rax,[rip+0xc9c]        # 2028 <_IO_stdin_used+0x28>
+    138c:	mov    rdi,rax
+    138f:	call   1090 <puts@plt>
+    1394:	mov    rsp,rbx
+    1397:	nop
+    1398:	mov    rax,QWORD PTR [rbp-0x38]
+    139c:	sub    rax,QWORD PTR fs:0x28
+    13a5:	je     13ac <check+0x1be>
+    13a7:	call   10b0 <__stack_chk_fail@plt>
+    13ac:	lea    rsp,[rbp-0x28]
+    13b0:	pop    rbx
+    13b1:	pop    r12
+    13b3:	pop    r13
+    13b5:	pop    r14
+    13b7:	pop    r15
+    13b9:	pop    rbp
+    13ba:	ret
+
+Disassembly of section .fini:
