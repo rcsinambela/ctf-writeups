@@ -2,7 +2,7 @@
 
 Author: nblirwn, takanami
 
-Category: Web Exploitation
+Category: OSINT
 
 Flag: ``
 

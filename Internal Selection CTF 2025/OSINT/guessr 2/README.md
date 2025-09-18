@@ -1,14 +1,14 @@
-# guessr 1
+# guessr 2
 
 Author: nblirwn, takanami
 
-Category: Web Exploitation
+Category: OSINT
 
 Flag: ``
 
 ## Description
 
-"must be the wind water."
+i dont understand the local language and lost my friend on the way. can you find out where i'm so my friend can pick me up?
 
 http://intersec.hcs-team.com:6003/
 
