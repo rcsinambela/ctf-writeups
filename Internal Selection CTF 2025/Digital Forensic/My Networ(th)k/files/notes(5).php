@@ -1,0 +1,1 @@
+note=harusnya+aman+kan+yak%3F
